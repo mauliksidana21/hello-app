@@ -1,5 +1,14 @@
-public class HelloApp {
+ublic class Hello {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+
+        // Check if no arguments are provided
+        if (args.length == 0) {
+            System.out.println("Hello, World");
+        } else {
+            // Loop through all arguments
+            for (String name : args) {
+                System.out.println("Hello, " + name);
+            }
+        }
     }
-}
+}[]
