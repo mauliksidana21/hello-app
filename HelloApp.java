@@ -5,15 +5,7 @@ public class HelloApp {
             System.out.println("Hello World");
         } else {
 
-            String result = "";
-
-            // Build string with comma
-            for (String name : args) {
-                result += name + ", ";
-            }
-
-            // Remove last ", "
-            result = result.substring(0, result.length() - 2);
+            String result = String.join(", ", args);
 
             System.out.println("Hello " + result);
         }
